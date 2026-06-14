@@ -84,12 +84,28 @@ export const AMD_GPU_SKUS: Record<string, AmdGpuHardwareSpec> = {
 		power: 220,
 		releaseYear: 2025,
 	},
+	"RX 9070 GRE": {
+		tflops: 68.57,
+		memory: [12, 16],
+		gfxVersion: "gfx1201",
+		msrp: 500,
+		power: 220,
+		releaseYear: 2026,
+	},
 	"RX 9060 XT": {
 		tflops: 51.28,
 		memory: [8, 16],
 		gfxVersion: "gfx1200",
 		msrp: 350,
 		power: 160,
+		releaseYear: 2025,
+	},
+	"RX 9060": {
+		tflops: 42.86,
+		memory: [8],
+		gfxVersion: "gfx1200",
+		msrp: 290,
+		power: 132,
 		releaseYear: 2025,
 	},
 	"PRO W7900": {
@@ -285,7 +301,7 @@ export const AMD_GPU_SKUS: Record<string, AmdGpuHardwareSpec> = {
 		releaseYear: 2023,
 	},
 	"Radeon 820M": {
-		tflops: 1.434,
+		tflops: 1.4336,
 		memory: AMD_GPU_INTEGRATED_SHARED_MEMORY_OPTIONS,
 		gfxVersion: "gfx1152",
 		msrp: 200,
@@ -301,7 +317,7 @@ export const AMD_GPU_SKUS: Record<string, AmdGpuHardwareSpec> = {
 		releaseYear: 2025,
 	},
 	"Radeon 860M": {
-		tflops: 6.14,
+		tflops: 6.144,
 		memory: AMD_GPU_INTEGRATED_SHARED_MEMORY_OPTIONS,
 		gfxVersion: "gfx1152",
 		msrp: 300,
@@ -309,7 +325,7 @@ export const AMD_GPU_SKUS: Record<string, AmdGpuHardwareSpec> = {
 		releaseYear: 2025,
 	},
 	"Radeon 880M": {
-		tflops: 8.91,
+		tflops: 8.909,
 		memory: AMD_GPU_INTEGRATED_SHARED_MEMORY_OPTIONS,
 		gfxVersion: "gfx1150",
 		msrp: 400,
@@ -411,7 +427,7 @@ export const AMD_CPU_SKUS: Record<string, HardwareSpec> = {
 		power: 180,
 		releaseYear: 2017,
 	},
-	"Ryzen 7 3800X (16)": {
+	"Ryzen 7 3800X (16 cores)": {
 		tflops: 1.73,
 		msrp: 400,
 		power: 105,
