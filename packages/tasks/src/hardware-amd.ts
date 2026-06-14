@@ -20,6 +20,14 @@ export const AMD_GPU_SKUS: Record<string, AmdGpuHardwareSpec> = {
 		power: 750,
 		releaseYear: 2023,
 	},
+	MI250X: {
+		tflops: 383.0,
+		memory: [128],
+		gfxVersion: "gfx90a",
+		msrp: 10_000,
+		power: 560,
+		releaseYear: 2021,
+	},
 	MI250: {
 		tflops: 362.1,
 		memory: [128],
@@ -29,6 +37,14 @@ export const AMD_GPU_SKUS: Record<string, AmdGpuHardwareSpec> = {
 		releaseYear: 2021,
 	},
 	MI210: {
+		tflops: 181.0,
+		memory: [64],
+		gfxVersion: "gfx90a",
+		msrp: 8_000,
+		power: 300,
+		releaseYear: 2022,
+	},
+	MI200: {
 		tflops: 181.0,
 		memory: [64],
 		gfxVersion: "gfx90a",
