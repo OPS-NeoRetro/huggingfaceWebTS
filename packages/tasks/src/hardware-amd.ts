@@ -60,7 +60,15 @@ export const AMD_GPU_SKUS: Record<string, AmdGpuHardwareSpec> = {
 		power: 300,
 		releaseYear: 2018,
 	},
-	"R9700 PRO": {
+	"Radeon AI PRO R9700": {
+		tflops: 95.7,
+		memory: [32],
+		gfxVersion: "gfx1201",
+		msrp: 1_250,
+		power: 300,
+		releaseYear: 2025,
+	},
+	"Radeon AI PRO R9700S": {
 		tflops: 95.7,
 		memory: [32],
 		gfxVersion: "gfx1201",
