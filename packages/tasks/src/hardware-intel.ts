@@ -1,6 +1,34 @@
 import type { HardwareSpec } from "./hardware.ts";
 
 export const INTEL_GPU_SKUS: Record<string, HardwareSpec> = {
+    "Arc A310": {
+        tflops: 5.376,
+        memory: [4],
+        msrp: 150,
+        power: 25,
+        releaseYear: 2022,
+    },
+    "Arc A350": {
+        tflops: 6.144,
+        memory: [4],
+        msrp: 180,
+        power: 25,
+        releaseYear: 2022,
+    },
+    "Arc A380": {
+        tflops: 8.397,
+        memory: [6],
+        msrp: 200,
+        power: 75,
+        releaseYear: 2022
+    },
+    "Arc A580": {
+        tflops: 24.58,
+        memory: [8],
+        msrp: 230, // just an estimate
+        power: 175,
+        releaseYear: 2023,
+    },
     "Arc A750": {
         tflops: 34.41,
         memory: [8],
@@ -38,9 +66,16 @@ export const INTEL_GPU_SKUS: Record<string, HardwareSpec> = {
     },
     "Arc Pro B60": {
         tflops: 24.58,
-        memory: [24, 48],
+        memory: [24],
         msrp: 1_200,
         power: 200,
+        releaseYear: 2025,
+    },
+    "Arc Pro B60 Dual": {
+        tflops: 49.16,
+        memory: [48],
+        msrp: 1_500,
+        power: 400,
         releaseYear: 2025,
     },
     "Arc Pro B70": {

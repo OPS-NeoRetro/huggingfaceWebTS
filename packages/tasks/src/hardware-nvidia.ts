@@ -356,6 +356,38 @@ export const NVIDIA_SKUS: Record<string, NvidiaHardwareSpec> = {
 		power: 60,
 		releaseYear: 2021,
 	},
+	"Quadro RTX 4000 (Turing)": {
+		tflops: 14.24,
+		memory: [8],
+		computeCapability: 7.5,
+		msrp: 900,
+		power: 160,
+		releaseYear: 2018,
+	},
+	"Quadro RTX 5000 (Turing)": {
+		tflops: 22.3,
+		memory: [16],
+		computeCapability: 7.5,
+		msrp: 2_300,
+		power: 230,
+		releaseYear: 2018,
+	},
+	"Quadro RTX 6000 (Turing)": {
+		tflops: 32.62,
+		memory: [24],
+		computeCapability: 7.5,
+		msrp: 6_300,
+		power: 260,
+		releaseYear: 2018,
+	},
+	"Quadro RTX 8000 (Turing)": {
+		tflops: 32.62,
+		memory: [48],
+		computeCapability: 7.5,
+		msrp: 10_000,
+		power: 260,
+		releaseYear: 2018,
+	},
 	"RTX 5090": {
 		tflops: 104.8,
 		memory: [32],
@@ -566,7 +598,7 @@ export const NVIDIA_SKUS: Record<string, NvidiaHardwareSpec> = {
 	},
 	"RTX 3090": {
 		tflops: 35.58,
-		memory: [24, 48], // 48GB: RTX 3090
+		memory: [24, 48], // 48GB: modded RTX 3090
 		computeCapability: 8.6,
 		msrp: 1_500,
 		power: 350,
@@ -674,6 +706,14 @@ export const NVIDIA_SKUS: Record<string, NvidiaHardwareSpec> = {
 		computeCapability: 7.5,
 		msrp: 1_000,
 		power: 250,
+		releaseYear: 2018,
+	},
+	"RTX 2080 SUPER": {
+		tflops: 22.3,
+		memory: [8],
+		computeCapability: 7.5,
+		msrp: 700,
+		power: 255,
 		releaseYear: 2018,
 	},
 	"RTX 2080": {
@@ -844,7 +884,7 @@ export const NVIDIA_SKUS: Record<string, NvidiaHardwareSpec> = {
 		power: 50,
 		releaseYear: 2019,
 	},
-	"GTX 1650 Mobile": {
+	"GTX 1650 Mobile/Laptop": {
 		tflops: 6.39,
 		memory: [4],
 		computeCapability: 7.5,
@@ -909,14 +949,30 @@ export const NVIDIA_SKUS: Record<string, NvidiaHardwareSpec> = {
 		releaseYear: 2016,
 	},
 	"GTX 1050 Ti": {
-		tflops: 2.1, // float32 (GPU does not support native float16)
+		tflops: 2.332, // float32 (GPU does not support native float16)
 		memory: [4],
 		computeCapability: 6.1,
 		msrp: 150,
 		power: 75,
 		releaseYear: 2016,
 	},
-	T4: {
+	"GTX 1050 3GB": {
+		tflops: 2.332, // float32 (GPU does not support native float16)
+		memory: [3],
+		computeCapability: 6.1,
+		msrp: 150,
+		power: 75,
+		releaseYear: 2016,
+	},
+	"GTX 1050 2GB": {
+		tflops: 1.862, // float32 (GPU does not support native float16)
+		memory: [2],
+		computeCapability: 6.1,
+		msrp: 150,
+		power: 75,
+		releaseYear: 2016,
+	},
+	"Tesla T4": {
 		tflops: 65.13,
 		memory: [16],
 		computeCapability: 7.5,
@@ -924,7 +980,7 @@ export const NVIDIA_SKUS: Record<string, NvidiaHardwareSpec> = {
 		power: 70,
 		releaseYear: 2018,
 	},
-	T10: {
+	"Tesla T10": {
 		tflops: 20.0,
 		memory: [16],
 		computeCapability: 7.5,
@@ -932,9 +988,17 @@ export const NVIDIA_SKUS: Record<string, NvidiaHardwareSpec> = {
 		power: 150,
 		releaseYear: 2020,
 	},
+	"Quadro GV100": {
+		tflops: 33.32,
+		memory: [32],
+		computeCapability: 7.0,
+		msrp: 9_000,
+		power: 300,
+		releaseYear: 2017,
+	},
 	V100: {
 		tflops: 28.26,
-		memory: [32, 16],
+		memory: [16, 32],
 		computeCapability: 7.0,
 		msrp: 10_000,
 		power: 300,
@@ -948,7 +1012,15 @@ export const NVIDIA_SKUS: Record<string, NvidiaHardwareSpec> = {
 		power: 250,
 		releaseYear: 2016,
 	},
-	P40: {
+	"Tesla P4": {
+		tflops: 5.704, // float32 (GPU does not support native float16)
+		memory: [8],
+		computeCapability: 6.1,
+		msrp: 1_200, // just an estimate
+		power: 250,
+		releaseYear: 2016,
+	},
+	"Tesla P40": {
 		tflops: 11.76, // float32 (GPU does not support native float16)
 		memory: [24],
 		computeCapability: 6.1,
@@ -956,9 +1028,9 @@ export const NVIDIA_SKUS: Record<string, NvidiaHardwareSpec> = {
 		power: 250,
 		releaseYear: 2016,
 	},
-	P100: {
+	"Tesla P100": {
 		tflops: 19.05,
-		memory: [16],
+		memory: [12, 16],
 		computeCapability: 6.0,
 		msrp: 7_000,
 		power: 300,

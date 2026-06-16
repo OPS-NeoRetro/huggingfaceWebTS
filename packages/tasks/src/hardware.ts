@@ -20,7 +20,7 @@ export interface HardwareSpec {
 	/**
 	 * Approximate value, in FP16 whenever possible for GPUs and FP32 for CPUs.
 	 * This is only approximate/theoretical and shouldn't be taken too seriously.
-	 * Currently the CPU values are from cpu-monkey.com
+	 * Currently the CPU values are from cpu-monkey.com,
 	 * while the GPU values are from techpowerup.com
 	 *
 	 * Note to reviewers: I got fed up with data entry,
