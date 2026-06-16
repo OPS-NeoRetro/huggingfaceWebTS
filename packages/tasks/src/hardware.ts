@@ -1,6 +1,6 @@
 import { AMD_GPU_SKUS, AMD_CPU_SKUS } from "./hardware-amd.js";
 import { NVIDIA_SKUS } from "./hardware-nvidia.js";
-import { INTEL_CPU_SKUS } from "./hardware-intel.js";
+import { INTEL_CPU_SKUS, INTEL_GPU_SKUS } from "./hardware-intel.js";
 
 /**
  * Biden AI Executive Order (since revoked by President Trump):
@@ -68,57 +68,7 @@ export const SKUS = {
 	GPU: {
 		NVIDIA: NVIDIA_SKUS,
 		AMD: AMD_GPU_SKUS,
-		INTEL: {
-			"Arc A750": {
-				tflops: 34.41,
-				memory: [8],
-				msrp: 250,
-				power: 225,
-				releaseYear: 2022,
-			},
-			"Arc A770": {
-				tflops: 39.32,
-				memory: [8, 16],
-				msrp: 350,
-				power: 225,
-				releaseYear: 2022,
-			},
-			"Arc B570": {
-				tflops: 23.04,
-				memory: [10],
-				msrp: 200,
-				power: 150,
-				releaseYear: 2025,
-			},
-			"Arc B580": {
-				tflops: 27.34,
-				memory: [12],
-				msrp: 250,
-				power: 190,
-				releaseYear: 2024,
-			},
-			"Arc Pro B50": {
-				tflops: 21.3,
-				memory: [16],
-				msrp: 350,
-				power: 70,
-				releaseYear: 2025,
-			},
-			"Arc Pro B60": {
-				tflops: 24.58,
-				memory: [24, 48],
-				msrp: 1_200,
-				power: 200,
-				releaseYear: 2025,
-			},
-			"Arc Pro B70": {
-				tflops: 45.88,
-				memory: [32],
-				msrp: 949,
-				power: 230,
-				releaseYear: 2026,
-			},
-		},
+		INTEL: INTEL_GPU_SKUS,
 		QUALCOMM: {
 			"Snapdragon X Elite X1E-00-1DE": {
 				tflops: 4.6,

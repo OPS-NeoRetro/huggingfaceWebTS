@@ -34,7 +34,7 @@ export const NVIDIA_SKUS: Record<string, NvidiaHardwareSpec> = {
 		computeCapability: 10.0,
 		msrp: 40_000,
 		power: 1000,
-		releaseYear: 2024,
+		releaseYear: 2025,
 	},
 	H800: {
 		tflops: 204.9,

@@ -1,5 +1,57 @@
 import type { HardwareSpec } from "./hardware.ts";
 
+export const INTEL_GPU_SKUS: Record<string, HardwareSpec> = {
+    "Arc A750": {
+        tflops: 34.41,
+        memory: [8],
+        msrp: 250,
+        power: 225,
+        releaseYear: 2022,
+    },
+    "Arc A770": {
+        tflops: 39.32,
+        memory: [8, 16],
+        msrp: 350,
+        power: 225,
+        releaseYear: 2022,
+    },
+    "Arc B570": {
+        tflops: 23.04,
+        memory: [10],
+        msrp: 200,
+        power: 150,
+        releaseYear: 2025,
+    },
+    "Arc B580": {
+        tflops: 27.34,
+        memory: [12],
+        msrp: 250,
+        power: 190,
+        releaseYear: 2024,
+    },
+    "Arc Pro B50": {
+        tflops: 21.3,
+        memory: [16],
+        msrp: 350,
+        power: 70,
+        releaseYear: 2025,
+    },
+    "Arc Pro B60": {
+        tflops: 24.58,
+        memory: [24, 48],
+        msrp: 1_200,
+        power: 200,
+        releaseYear: 2025,
+    },
+    "Arc Pro B70": {
+        tflops: 45.88,
+        memory: [32],
+        msrp: 949,
+        power: 230,
+        releaseYear: 2026,
+    },
+};
+
 export const INTEL_CPU_SKUS: Record<string, HardwareSpec> = {
     "Xeon 4th Generation (Sapphire Rapids)": {
         tflops: 1.3,
