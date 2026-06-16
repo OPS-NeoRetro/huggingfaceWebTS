@@ -9,7 +9,7 @@ export interface AmdGpuHardwareSpec extends HardwareSpec {
 	gfxVersion: string;
 }
 
-const AMD_GPU_INTEGRATED_SHARED_MEMORY_OPTIONS = [16, 24, 32, 48, 64, 96];
+const AMD_GPU_INTEGRATED_SHARED_MEMORY_OPTIONS = [4, 8, 16, 24, 32, 48, 64, 96];
 
 export const AMD_GPU_SKUS: Record<string, AmdGpuHardwareSpec> = {
 	MI300: {
